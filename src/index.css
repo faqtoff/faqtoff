@@ -1,13 +1,189 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("./Normalize.css");
+@import url("./FaqStyle/FaqStyle.css");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-primary: #343353;
+  --bg-color-primary: rgb(109, 112, 226);
+  --color-secondary: #ff4c60;
+  --bg-color-secondary: rgb(247, 124, 140);
+  --secondary: var(--bg-color-secondary);
+  --color-terciary: #ffd15c;
+  --bg-color-terciaty: rgb(254, 208, 102);
+}
+body {
+  overflow: hidden;
+}
+.banner-img {
+  background-image: url("./assets/fondo_banner.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+}
+h1 {
+  color: aliceblue;
+  font-size: 28px;
+  margin-top: 65px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+h1 span {
+  color: aliceblue;
+  font-size: 16px;
+  margin: 18px auto;
+  font-weight: 300;
+}
+h2 {
+  margin: 38px 0;
+  font-size: 28px;
+}
+p {
+  font-size: 16px;
+  margin-top: 0;
+  line-height: 25px;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+/* SKILS */
+.about-me-container {
+  display: flex;
+}
+.about-me-container > img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+/*SERVICES*/
+.services-container {
+  display: flex;
+}
+.services-container > .card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 52px;
+  text-align: center;
+  min-width: 250px;
+}
+.services-container > .card > img {
+  width: 70px;
+  align-self: center;
+  height: auto;
+  margin: 0;
+}
+.services-container > .card:last-of-type {
+  margin-right: 0;
+}
+/*EXPERIENCE*/
+.experience-container__topics {
+  display: flex;
+}
+.experience-container__topics__card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.experience-container__topics__card:first-of-type {
+  margin-left: 0;
+}
+.experience-container__topics__card:last-of-type {
+  margin-right: 0;
+}
+.experience-container__topics__card__data {
+  padding: 0 0 50px 50px;
+  border-left: 1px solid var(--color-secondary);
+  position: relative;
+}
+.experience-container__topics__card__data > i {
+  position: absolute;
+  color: var(--color-secondary);
+  left: -8.5px;
+  top: -11px;
+}
+.experience-container__topics__card__data > h3 {
+  margin: 10px 0;
+}
+.experience-container__topics__card__data > span {
+  font-size: 14px;
+  color: gray;
+}
+.experience-container__topics__card__data > ul > li {
+  font-size: 16px;
+  font-weight: 200;
+}
+/* FOOTER */
+.footer {
+  background-color: var(--secondary);
+  color: #fafafa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+.footer span {
+  font-weight: bold;
+}
+.footer .btn-social {
+  background-size: 16px;
+}
+/* CONTACTME */
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  /* -------- ESTILOS GENERALES */
+  .container-faqstyle {
+    margin: 0 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-faqstyle {
+    text-align: center;
+  }
+  .card-portfolio {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  /* SKILS */
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-me-container > img {
+    margin-bottom: 20px;
+  }
+  /* Services */
+  .services-container {
+    flex-direction: column;
+  }
+  .services-container > .card {
+    margin-right: 0;
+    margin-bottom: 52px;
+  }
+  /* xperiencia */
+  .experience-container__topics {
+    flex-direction: column;
+  }
+  .experience-container__topics__card {
+    margin: 0;
+  }
+  .experience-container__topics__card:last-of-type {
+    margin-top: 16px;
+  }
+  /* Contacto */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    margin-top: 16px;
+  }
+  input {
+    width: 100%;
+  }
 }

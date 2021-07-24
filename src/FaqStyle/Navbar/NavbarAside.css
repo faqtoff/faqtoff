@@ -1,0 +1,117 @@
+/* Clases necesarias para el padre y el hermano */
+.full-container {
+  /* Rocket Base */
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  /* Rocket Base */
+}
+.main-container {
+  /* Rocket Base */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  /* Rocket Base */
+}
+
+/* NAVBAR */
+aside.navbar-container {
+  min-width: 290px;
+  max-width: 290px;
+  border-right: solid 1px rgba(255, 255, 255, 0.1);
+  background-color: var(--secondary);
+}
+.navbar-aside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 50px;
+  width: 290px;
+}
+.navbar-close-icon,
+.navbar-open-icon {
+  height: 1.5rem;
+}
+.navbar-aside > span {
+  font-size: 28px;
+  color: aliceblue;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 103px;
+}
+
+.navbar-aside > ul > li > a,
+.navbar-aside > a {
+  font-size: 16px;
+  font-weight: 300;
+  color: aliceblue;
+  text-decoration: none;
+  margin: 8px 0;
+}
+.navbar-aside > ul > li > a > img,
+.navbar-aside > a > img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.navbar-close,
+.navbar-open,
+input.navbar-input {
+  display: none;
+}
+
+.navbar-aside > ul > li {
+  list-style: none;
+}
+
+@media (max-width: 1000px) {
+  /* NAVBAR */
+  aside.navbar-container {
+    min-width: initial;
+    max-width: initial;
+    border: none;
+    display: block;
+  }
+  .navbar-open,
+  .navbar-input {
+    display: block;
+  }
+  .navbar-open,
+  .navbar-close {
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+  }
+  .navbar-input,
+  .navbar-close {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .navbar-input:checked ~ .navbar-close {
+    display: block;
+  }
+  .navbar-input:checked ~ .navbar-open {
+    display: none;
+  }
+  .navbar-aside {
+    display: none;
+  }
+  .navbar-input:checked ~ .navbar-aside {
+    background-color: var(--secondary);
+    opacity: 0.9;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    margin: 2.5rem 0 0 2.5rem;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+  }
+  .navbar-input:checked ~ .navbar span {
+    margin: 20px;
+  }
+}

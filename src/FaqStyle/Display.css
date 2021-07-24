@@ -1,0 +1,187 @@
+/* X-Small devices (portrait phones, less than 576px) */
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.d-inline-flex {
+  display: inline-flex !important;
+}
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-col {
+  flex-direction: column !important;
+}
+.justify-content-start {
+  justify-content: start !important;
+}
+.justify-content-end {
+  justify-content: end !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+@media (min-width: 576px) {
+  .d-sm-none {
+    display: none !important;
+  }
+  .d-sm-block {
+    display: block !important;
+  }
+  .d-sm-flex {
+    display: flex !important;
+  }
+  .d-sm-inline-flex {
+    display: inline-flex !important;
+  }
+  .flex-sm-row {
+    flex-direction: row !important;
+  }
+  .flex-sm-col {
+    flex-direction: column !important;
+  }
+
+  .justify-sm-content-start {
+    justify-content: start !important;
+  }
+  .justify-sm-content-end {
+    justify-content: end !important;
+  }
+  .justify-sm-content-center {
+    justify-content: center !important;
+  }
+  .justify-sm-content-between {
+    justify-content: space-between !important;
+  }
+  .justify-sm-content-around {
+    justify-content: space-around !important;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+  .d-md-flex {
+    display: flex !important;
+  }
+  .d-md-inline-flex {
+    display: inline-flex !important;
+  }
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+  .flex-md-col {
+    flex-direction: column !important;
+  }
+
+  .justify-md-content-start {
+    justify-content: start !important;
+  }
+  .justify-md-content-end {
+    justify-content: end !important;
+  }
+  .justify-md-content-center {
+    justify-content: center !important;
+  }
+  .justify-md-content-between {
+    justify-content: space-between !important;
+  }
+  .justify-md-content-around {
+    justify-content: space-around !important;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  .d-lg-flex {
+    display: flex !important;
+  }
+  .d-lg-inline-flex {
+    display: inline-flex !important;
+  }
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+  .flex-lg-col {
+    flex-direction: column !important;
+  }
+
+  .justify-lg-content-start {
+    justify-content: start !important;
+  }
+  .justify-lg-content-end {
+    justify-content: end !important;
+  }
+  .justify-lg-content-center {
+    justify-content: center !important;
+  }
+  .justify-lg-content-between {
+    justify-content: space-between !important;
+  }
+  .justify-lg-content-around {
+    justify-content: space-around !important;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .d-xl-none {
+    display: none !important;
+  }
+  .d-xl-block {
+    display: block !important;
+  }
+  .d-xl-flex {
+    display: flex !important;
+  }
+  .d-xl-inline-flex {
+    display: inline-flex !important;
+  }
+  .flex-xl-row {
+    flex-direction: row !important;
+  }
+  .flex-xl-col {
+    flex-direction: column !important;
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .d-xxl-none {
+    display: none !important;
+  }
+  .d-xxl-block {
+    display: block !important;
+  }
+  .d-xxl-flex {
+    display: flex !important;
+  }
+  .d-xxl-inline-flex {
+    display: inline-flex !important;
+  }
+  .flex-xxl-row {
+    flex-direction: row !important;
+  }
+  .flex-xxl-col {
+    flex-direction: column !important;
+  }
+}

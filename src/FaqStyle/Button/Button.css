@@ -1,0 +1,124 @@
+.btn {
+  margin: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--gray-600);
+  box-sizing: content-box;
+  color: var(--white);
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: 18px;
+  padding: 6px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:hover {
+  background-color: var(--gray-700);
+  /*
+  box-shadow: 2px 2px 2px 1px var(--gray-800);
+  */
+  cursor: pointer;
+}
+
+.btn-lg,
+a.btn-lg {
+  border: none;
+  height: 42px;
+  padding: 0 25px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+}
+a.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.btn-scroll {
+  position: absolute;
+  bottom: 26px;
+  left: calc(50% - 41.5px);
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-icon {
+  margin-top: 12px;
+  width: 16px;
+}
+/* LUZ */
+.btn-rounded {
+  padding: 10px 14px;
+  font-size: 18px;
+  border: none;
+  box-shadow: none;
+  border-radius: 25px;
+}
+.btn.btn-luz:hover {
+  background-color: var(--gray-200);
+  color: var(--black);
+}
+/* BUTTONS COLORS */
+.btn-faqBtn {
+  background-color: var(--faqBtn);
+}
+.btn-faqBtn:hover {
+  background-color: var(--faqBtn);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--primary);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}
+.btn-success {
+  background-color: var(--success);
+  color: var(--white);
+}
+.btn-success:hover {
+  background-color: var(--success);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}
+.btn-info {
+  background-color: var(--info);
+  color: var(--white);
+}
+.btn-info:hover {
+  background-color: var(--info);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}
+.btn-warning {
+  background-color: var(--warning);
+  color: var(--white);
+}
+.btn-warning:hover {
+  background-color: var(--warning);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}
+.btn-danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+.btn-danger:hover {
+  background-color: var(--danger);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}
+.btn-light {
+  background-color: var(--light);
+  color: var(--black);
+}
+.btn-light:hover {
+  background-color: var(--light);
+  box-shadow: 2px 2px 2px 1px var(--gray-600);
+}

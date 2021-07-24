@@ -1,0 +1,67 @@
+/* BANNER */
+.fs-banner-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.fs-background-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.fs-banner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.fs-banner-info > img {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+}
+.fs-banner-info > h1,
+.fs-banner-info__title {
+  font-size: 28px;
+  margin-top: 65px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.fs-banner-info > h1 > span,
+.fs-banner-info > h1 > span > a,
+.fs-banner-info__title span,
+.fs-banner-info__title span > a {
+  font-size: 16px;
+  margin: 18px auto;
+  font-weight: 300;
+}
+.fs-banner-info__title span > a {
+  text-decoration: none;
+}
+
+.btn-social-desk {
+  display: flex;
+}
+.btn-social {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  height: 25px;
+  width: 25px;
+  margin: 0 5px;
+}
+.bg-linkedin {
+  background-image: url("./assets/linkedin.svg");
+}
+.bg-github {
+  background-image: url("./assets/github.svg");
+}
+.bg-twitter {
+  background-image: url("./assets/gorjeo.svg");
+}
+.bg-instagram {
+  background-image: url("./assets/instagram.svg");
+}
