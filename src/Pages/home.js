@@ -11,12 +11,12 @@ const home = () => {
             <NavbarAside className='bg-secondary'>
                 <span className='color-gray-300'>@FaqToff</span>
                 <ul>
-                    <li className='m-3'><a href="#home" className='color-gray-300'><i class="fas fa-home"></i> Home</a></li>
-                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user"></i> Servicios</a></li>
-                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user"></i> Sobre Mi</a></li>
-                    <li className='m-3'><a href="#experience" className='color-gray-300'><i class="fas fa-briefcase"></i> Experiencia</a></li>
-                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user"></i> Trabajos</a></li>
-                    <li className='m-3'><a href="#contact" className='color-gray-300'><i class="fas fa-comments"></i> Contacto</a></li>
+                    <li className='m-3'><a href="#home" className='color-gray-300'><i class="fas fa-home color-primary"></i> Home</a></li>
+                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user color-primary"></i> Servicios</a></li>
+                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user color-primary"></i> Sobre Mi</a></li>
+                    <li className='m-3'><a href="#experience" className='color-gray-300'><i class="fas fa-briefcase color-primary"></i> Experiencia</a></li>
+                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user color-primary"></i> Trabajos</a></li>
+                    <li className='m-3'><a href="#contact" className='color-gray-300'><i class="fas fa-comments color-primary"></i> Contacto</a></li>
                 </ul>
             </NavbarAside>
             <div className="main-container">
@@ -24,12 +24,12 @@ const home = () => {
                     <img src={Avatar} alt="avatar" />
                     <h1 className='fs-banner-info__title color-black'>Facundo Toffolo Pasquini <span className=' color-black'>Frontend Developer</span></h1>
                 <div className="btn-social-desk">
-                    <a class="btn-social bg-linkedin" href="https://www.linkedin.com/in/faqtoff" target="blank"></a>
-                    <a class="btn-social bg-github" href="https://github.com/faqtoff" target="blank"></a>
-                    <a class="btn-social bg-twitter" href="#" target="blank"></a>
-                    <a class="btn-social bg-instagram" href="https://www.instagram.com/faqtoff/" target="blank"></a>
+                    <a class="btn-social color-black" href="https://www.linkedin.com/in/faqtoff" target="blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="btn-social color-black" href="https://github.com/faqtoff" target="blank"><i class="fab fa-github"></i></a>
+                    <a class="btn-social color-black" href="#" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a class="btn-social color-black" href="https://www.instagram.com/faqtoff/" target="blank"><i class="fab fa-instagram"></i></a>
                 </div>
-                <a className="btn btn-rounded" href="#contact">Contactame</a>
+                <a className="btn btn-rounded bg-primary" href="#contact">Contactame</a>
                 </BannerFullScreen>
                 <div id='main'>
                         <section className="about-me container-faqstyle" id="skils">
@@ -43,7 +43,7 @@ const home = () => {
                                         <p>Hola! Soy desarrollador Frontend.</p>
                                         <p>Actualmente estudio Ingenieria Industrial en la UTN.BA y realizo trabajos web a pedido</p>
                                         <p>Tambien tengo una impresora 3D y realizo impresiones y diseños por pedios</p>
-                                        <button className="btn btn-rounded">Ver Curriculum</button>
+                                        <button className="btn btn-rounded bg-primary">Ver Curriculum</button>
                                     </div>
 
                                     <div className="col-faqstyle">
@@ -51,7 +51,7 @@ const home = () => {
                                         <p>HTML y CSS</p>
                                         <div className="progess">
                                         <div 
-                                                className="progress-bar bg-gray-600"
+                                                className="progress-bar bg-primary"
                                                 style={{width: '85%'}}>
                                             </div>
                                         </div>
@@ -59,7 +59,7 @@ const home = () => {
                                         <p>JS</p>
                                         <div className="progess">
                                             <div 
-                                                className="progress-bar bg-gray-600"
+                                                className="progress-bar bg-primary"
                                                 style={{width: '85%'}}>
                                             </div>
                                         </div>
@@ -67,7 +67,7 @@ const home = () => {
                                         <p>React</p>
                                         <div className="progess">
                                             <div 
-                                                className="progress-bar bg-gray-600"
+                                                className="progress-bar bg-primary"
                                                 style={{width: '85%'}}>
                                             </div>
                                         </div>
@@ -87,46 +87,46 @@ const home = () => {
 
                                 <div className="experience-container__topics__card card-portfolio">
                                     <div className="experience-container__topics__card__data">
-                                        <i className="fas fa-graduation-cap"></i>
+                                        <i className="fas fa-graduation-cap color-primary"></i>
                                         <span className="fecha">2021 - actualidad</span>
                                         <h3>UTN.BA</h3>
                                         <p className="experience-container__topics__card__data__description">Actualmente me encuentro estudiando la carrera de Ingenieria Industrial en la Universidad Tecnologica Nacional.</p>
                                 </div>
                                 <div className="experience-container__topics__card__data">
-                                        <i className="fas fa-graduation-cap"></i>
+                                        <i className="fas fa-graduation-cap color-primary"></i>
                                         <span className="fecha">2021 - 2021</span>
                                         <h3>RocketCode</h3>
                                         <p className="experience-container__topics__card__data__description">Realicé los siguientes cursos de Frontend:</p>
                                         <ul>
-                                        <li><a style={{marginTop:"25px"}} className="bg-secondary" href="">GitHub - Inicial</a></li>
-                                        <li><a style={{marginTop:"25px"}}  className="bg-secondary" href="">HTML y CSS - Inicial</a></li>
-                                        <li><a style={{marginTop:"25px"}}  className="bg-secondary" href="">JavaScript - Inicial</a></li>
-                                        <li><a style={{marginTop:"25px"}}  className="bg-secondary" href="">React - Inicial</a></li>
+                                        <li><a style={{marginTop:"25px"}} className="color-primary" href="">GitHub - Inicial</a></li>
+                                        <li><a style={{marginTop:"25px"}}  className="color-primary" href="">HTML y CSS - Inicial</a></li>
+                                        <li><a style={{marginTop:"25px"}}  className="color-primary" href="">JavaScript - Inicial</a></li>
+                                        <li><a style={{marginTop:"25px"}}  className="color-primary" href="">React - Inicial</a></li>
                                         </ul>
                                 </div>
                                 <div className="experience-container__topics__card__data">
-                                        <i className="fas fa-graduation-cap"></i>
+                                        <i className="fas fa-graduation-cap color-primary"></i>
                                         <span className="fecha">2016 - 2017</span>
                                         <h3>ini Capacitacion</h3>
                                         <p className="experience-container__topics__card__data__description">Realicé un curso de "Tecnico en reparacion de Hardware y Redes" en el instituti ini Capacitacion, en la ciudad de San Salvador de Jujuy.</p>
-                                        <a style={{marginTop:"25px"}}  className="secondary" href="">Ver diploma</a>
+                                        <a style={{marginTop:"25px"}}  className="color-primary" href="">Ver diploma</a>
                                 </div>
-                                <a style={{alignSelf: "center"}}  className="secondary" href="">Ver más</a>
+                                <a style={{alignSelf: "center"}}  className="color-primary" href="">Ver más</a>
                                 </div>
 
                                 <div className="experience-container__topics__card card-portfolio">
                                     <div className="experience-container__topics__card__data">
-                                        <i className="fas fa-briefcase"></i>
+                                        <i className="fas fa-briefcase color-primary"></i>
                                         <span className="fecha">2021 - actualidad</span>
                                         <h3>JujuyUnida.com</h3>
-                                        <p className="experience-container__topics__card__data__description">Encargado de desarrollo web de <a className="secondary" href="https://jujuyunida.com" target="blanck">JujuyUnida.com</a></p>
+                                        <p className="experience-container__topics__card__data__description">Encargado de desarrollo web de <a className="color-primary" href="https://jujuyunida.com" target="blanck">JujuyUnida.com</a></p>
                                     </div>
                                     <div className="experience-container__topics__card__data">
-                                        <i className="fas fa-briefcase"></i>
+                                        <i className="fas fa-briefcase color-primary"></i>
                                         <span className="fecha">2020 - 2020</span>
                                         <h3>Codo a Codo 3D</h3>
                                         <p className="experience-container__topics__card__data__description">Tesorero del grupo autoconvocado de Makers 3D para la produccion de protecciones contra el COVID-19 dedicado a la donacion a nivel nacional.</p>
-                                        <a className="secondary" href="">Más información</a>
+                                        <a className="color-primary" href="">Más información</a>
                                     </div>
                                 </div>
 
@@ -146,7 +146,7 @@ const home = () => {
                                         <input className='input input-shadow' type="text" placeholder="Nombre" />
                                         <input className='input input-shadow' type="email" placeholder="Email" />
                                         <textarea className='textarea textarea-shadow' name="mensaje" id="" placeholder="Tu mensaje"></textarea>
-                                        <button className="btn btn-rounded">Enviar</button>
+                                        <button className="btn btn-rounded bg-primary">Enviar</button>
                                     </form>
                                 </div>
                             </div>
@@ -154,12 +154,12 @@ const home = () => {
                         
                         <footer>
                             <div className="footer bg-secondary">
-                            <span className='color-gray-300'>@FaqToff</span>
+                            <span className='color-white'>@FaqToff</span>
                             <div className="btn-social-desk">
-                                <a class="btn-social bg-linkedin" href="https://www.linkedin.com/in/faqtoff" target="blank"></a>
-                                <a class="btn-social bg-github" href="https://github.com/faqtoff" target="blank"></a>
-                                <a class="btn-social bg-twitter" href="#" target="blank"></a>
-                                <a class="btn-social bg-instagram" href="https://www.instagram.com/faqtoff/" target="blank"></a>
+                                <a class="btn-social color-white" href="https://www.linkedin.com/in/faqtoff" target="blank"><i class="fab fa-linkedin"></i></a>
+                                <a class="btn-social color-white" href="https://github.com/faqtoff" target="blank"><i class="fab fa-github"></i></a>
+                                <a class="btn-social color-white" href="#" target="blank"><i class="fab fa-facebook-square"></i></a>
+                                <a class="btn-social color-white" href="https://www.instagram.com/faqtoff/" target="blank"><i class="fab fa-instagram"></i></a>
                             </div>
                             </div>
                             <FaqFooter />

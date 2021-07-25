@@ -5,7 +5,7 @@
 
 :root {
   --font-family: "Roboto", sans-serif;
-  --primary: var(--blue);
+  --primary: rgb(255, 182, 45);
   --secondary: var(--gray-300);
   --success: var(--green);
   --info: var(--cyan);

@@ -85,6 +85,9 @@
 .color-cyan {
   color: var(--cyan);
 }
+.color-primary {
+  color: var(--primary) !important;
+}
 /* BG COLORS */
 .bg-teal {
   background-color: var(--teal);
@@ -100,4 +103,7 @@
 }
 .bg-green {
   background-color: var(--green) !important;
+}
+.bg-primary {
+  background-color: var(--primary) !important;
 }
