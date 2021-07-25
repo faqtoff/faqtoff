@@ -14,7 +14,7 @@ body {
   overflow: hidden;
 }
 .banner-img {
-  background-image: url("./assets/fondo_banner.png");
+  background-image: url("./assets/fondo_banner.jpg");
   background-position: center;
   background-size: cover;
 }

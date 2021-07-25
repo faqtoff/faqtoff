@@ -20,9 +20,9 @@ const home = () => {
                 </ul>
             </NavbarAside>
             <div className="main-container">
-                <BannerFullScreen className='banner-img color-white' id="home" btnClassName='color-white'> 
+                <BannerFullScreen className='banner-img color-white' id="home" btnClassName='color-black'> 
                     <img src={Avatar} alt="avatar" />
-                    <h1 className='fs-banner-info__title color-white'>Facundo Toffolo Pasquini <span className=' color-white'>Frontend Developer</span></h1>
+                    <h1 className='fs-banner-info__title color-black'>Facundo Toffolo Pasquini <span className=' color-black'>Frontend Developer</span></h1>
                 <div className="btn-social-desk">
                     <a class="btn-social bg-linkedin" href="https://www.linkedin.com/in/faqtoff" target="blank"></a>
                     <a class="btn-social bg-github" href="https://github.com/faqtoff" target="blank"></a>
@@ -151,7 +151,7 @@ const home = () => {
                                 </div>
                             </div>
                         </section>
-  
+                        <a href="https://www.freepik.es/vectores/fondo">Vector de Fondo creado por freepik - www.freepik.es</a>
                         <footer>
                             <div className="footer bg-secondary">
                             <span className='color-gray-300'>@FaqToff</span>
