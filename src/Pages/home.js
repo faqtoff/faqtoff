@@ -82,14 +82,24 @@ const home = () => {
                             <h2 className="title-content">Servicios</h2>
                             <div className="services-container">
                                 <div className="card card-shadow bg-gray-700 color-gray-300">
+                                    <div className="d-flex justify-content-around">
+                                        <i class="fab fa-html5 fa-4x"></i>
+                                        <i class="fab fa-js fa-4x"></i>
+                                        <i class="fab fa-css3-alt fa-4x"></i>
+                                    </div>
                                     <h3>Diseño Web</h3>
                                     <p>Manejo de HTML5, CSS3, JS, React, Firebase y mas...</p>
                                 </div>
                                 <div className="card card-shadow bg-primary">
+                                    <div className="d-flex justify-content-around">
+                                        <i class="fas fa-laptop fa-5x"></i>
+                                        <i class="fas fa-cogs fa-5x"></i>
+                                    </div>
                                     <h3>Servicio Tecnico de PC</h3>
                                     <p>Instalación y configuracion de SO y apps en Mac y Windows. Servicio tecnico y mantenimiento de hardware.</p>
                                 </div>
                                 <div className="card card-shadow bg-gray-700 color-gray-300">
+                                    <i class="fas fa-cube fa-5x"></i>
                                     <h3>Diseño 3D</h3>
                                     <p>Diseño 3D con Fusion 360 y SolidEdge. Impresion 3D con una Original Prusa i3 MK3s</p>
                                 </div>
