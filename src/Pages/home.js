@@ -151,7 +151,7 @@ const home = () => {
                                 </div>
                             </div>
                         </section>
-                        <a href="https://www.freepik.es/vectores/fondo">Vector de Fondo creado por freepik - www.freepik.es</a>
+                        
                         <footer>
                             <div className="footer bg-secondary">
                             <span className='color-gray-300'>@FaqToff</span>
