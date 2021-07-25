@@ -6,6 +6,7 @@
 :root {
   --font-family: "Roboto", sans-serif;
   --primary: var(--blue);
+  --secondary: var(--gray-300);
   --success: var(--green);
   --info: var(--cyan);
   --warning: var(--yellow);

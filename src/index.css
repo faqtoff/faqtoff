@@ -4,23 +4,21 @@
 :root {
   --color-primary: #343353;
   --bg-color-primary: rgb(109, 112, 226);
-  --color-secondary: #ff4c60;
+  --color-secondary: var(--gray-700);
   --bg-color-secondary: rgb(247, 124, 140);
-  --secondary: var(--bg-color-secondary);
   --color-terciary: #ffd15c;
   --bg-color-terciaty: rgb(254, 208, 102);
+  --secondary: var(--gray-700);
 }
 body {
   overflow: hidden;
 }
 .banner-img {
-  background-image: url("./assets/fondo_banner.jpeg");
+  background-image: url("./assets/fondo_banner.png");
   background-position: center;
   background-size: cover;
-  color: aliceblue;
 }
 h1 {
-  color: aliceblue;
   font-size: 28px;
   margin-top: 65px;
   margin-bottom: 0;
@@ -156,6 +154,7 @@ p {
   }
   .about-me-container > img {
     margin-bottom: 20px;
+    margin-right: 0;
   }
   /* Services */
   .services-container {

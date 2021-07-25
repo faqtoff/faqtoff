@@ -2,7 +2,7 @@ import React from 'react'
 import './BannerFullScreen.css'
 import ScrollIcon from './assets/scroll.png'
 
-const BannerFullScreen = ({children, className, id}) => {
+const BannerFullScreen = ({children, className, id, btnClassName}) => {
     return (
         <header className={"fs-banner-container " + className} id={id}>
             <div className="fs-background-image">
@@ -10,9 +10,9 @@ const BannerFullScreen = ({children, className, id}) => {
                     {children}
                 </div>
             </div>
-            <a className="btn-scroll" href="#main">
+            <a className={"btn-scroll "+btnClassName} href="#main">
                 <span>Scroll Down</span>
-                <img className="scroll-icon" src={ScrollIcon} alt="Scroll" />
+                <i class="fas fa-angle-double-down"></i>
             </a>
         </header>
     )
