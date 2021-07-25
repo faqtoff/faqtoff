@@ -12,10 +12,10 @@ const home = () => {
                 <span className='color-gray-300'>@FaqToff</span>
                 <ul>
                     <li className='m-3'><a href="#home" className='color-gray-300'><i class="fas fa-home color-primary"></i> Home</a></li>
-                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user color-primary"></i> Servicios</a></li>
+                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-briefcase color-primary"></i> Servicios</a></li>
                     <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user color-primary"></i> Sobre Mi</a></li>
-                    <li className='m-3'><a href="#experience" className='color-gray-300'><i class="fas fa-briefcase color-primary"></i> Experiencia</a></li>
-                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-user color-primary"></i> Trabajos</a></li>
+                    <li className='m-3'><a href="#experience" className='color-gray-300'><i class="fas fa-graduation-cap color-primary"></i>Experiencia</a></li>
+                    <li className='m-3'><a href="#skils" className='color-gray-300'><i class="fas fa-layer-group color-primary"></i> Trabajos</a></li>
                     <li className='m-3'><a href="#contact" className='color-gray-300'><i class="fas fa-comments color-primary"></i> Contacto</a></li>
                 </ul>
             </NavbarAside>
@@ -77,8 +77,25 @@ const home = () => {
                                 </div>
                             </div>
                         </section>
-
     
+                        <section className="services container-faqstyle" id="services">
+                            <h2 className="title-content">Servicios</h2>
+                            <div className="services-container">
+                                <div className="card card-shadow bg-gray-700 color-gray-300">
+                                    <h3>Diseño Web</h3>
+                                    <p>Manejo de HTML5, CSS3, JS, React, Firebase y mas...</p>
+                                </div>
+                                <div className="card card-shadow bg-primary">
+                                    <h3>Servicio Tecnico de PC</h3>
+                                    <p>Instalación y configuracion de SO y apps en Mac y Windows. Servicio tecnico y mantenimiento de hardware.</p>
+                                </div>
+                                <div className="card card-shadow bg-gray-700 color-gray-300">
+                                    <h3>Diseño 3D</h3>
+                                    <p>Diseño 3D con Fusion 360 y SolidEdge. Impresion 3D con una Original Prusa i3 MK3s</p>
+                                </div>
+                            </div>
+                        </section>
+
                         <section className="experience-container container-faqstyle" id="experience">
     
                             <h2 className="title-content">Experiencia</h2>
@@ -132,6 +149,43 @@ const home = () => {
 
                             </div>
 
+                        </section>
+    
+                        <section class="works-container container-faqstyle" id="works">
+                            <h3 class="title-content">Mis trabajos</h3>
+                            <div class="works-container__topics">
+                                <div class="works-container__topics__card card card-shadow">
+                                <div class="works-container__topics__card__mask">
+                                    <span>Photo magic</span>
+                                </div>
+                                </div>
+                                <div class="works-container__topics__card card card-shadow">
+                                <div class="works-container__topics__card__mask">
+                                    <span>Photo magic</span>
+                                </div>
+                                </div>
+                                <div class="works-container__topics__card card card-shadow">
+                                <div class="works-container__topics__card__mask">
+                                    <span>Photo magic</span>
+                                </div>
+                                </div>
+                                <div class="works-container__topics__card card card-shadow">
+                                <div class="works-container__topics__card__mask">
+                                    <span>Photo magic</span>
+                                </div>
+                                </div>
+                                <div class="works-container__topics__card card card-shadow">
+                                <div class="works-container__topics__card__mask">
+                                    <span>Photo magic</span>
+                                </div>
+                                </div>
+                                <div class="works-container__topics__card card card-shadow">
+                                <div class="works-container__topics__card__mask">
+                                    <span>Photo magic</span>
+                                </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-rounded bg-primary" href="#">Ver todos</a>
                         </section>
 
                         <section className="contacto-container container-faqstyle" id="contact">
