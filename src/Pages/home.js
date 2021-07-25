@@ -135,7 +135,7 @@ const home = () => {
                                     <div className="experience-container__topics__card__data">
                                         <i className="fas fa-briefcase color-primary"></i>
                                         <span className="fecha">2021 - actualidad</span>
-                                        <h3>JujuyUnida.com</h3>
+                                        <h3>Jujuy Unida</h3>
                                         <p className="experience-container__topics__card__data__description">Encargado de desarrollo web de <a className="color-primary" href="https://jujuyunida.com" target="blanck">JujuyUnida.com</a></p>
                                     </div>
                                     <div className="experience-container__topics__card__data">
