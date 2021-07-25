@@ -1,0 +1,69 @@
+/* WORKS */
+.works-container > a,
+.works-container > a.btn {
+  margin-top: 25px;
+  align-self: flex-start;
+  display: block;
+  max-width: fit-content;
+}
+.works-container > a.btn {
+  align-self: center;
+}
+.works-container__topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+}
+.works-img {
+  max-width: 200px;
+  max-height: 200px;
+  align-self: center;
+  margin: 0;
+}
+.works-container__topics__card {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: auto 1rem;
+}
+.works-container__topics__card__mask {
+  background: var(--primary);
+  opacity: 0; /*Con esta propiedad le cambiamos la transparencia a nuestas cajas*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: auto 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+.works-container__topics__card__mask > span {
+  color: var(--gray-800);
+  font-size: 28px;
+}
+.works-container__topics__card__mask > a {
+  color: var(--gray-800);
+  text-decoration: none;
+}
+.works-container__topics__card:hover > .works-container__topics__card__mask {
+  opacity: 0.9;
+}
+
+@media (max-width: 1000px) {
+  /* Works */
+  .works-container__topics {
+    display: flex;
+    flex-direction: column;
+  }
+  .works-container__topics__card__mask {
+    top: 0;
+    left: 0;
+  }
+}

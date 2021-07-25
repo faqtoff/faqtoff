@@ -4,6 +4,7 @@ import NavbarAside from '../FaqStyle/Navbar/NavbarAside'
 
 import Avatar from '../assets/avatar.jpeg'
 import FaqFooter from '../FaqStyle/FaqFooter/FaqFooter'
+import WorksHolder from '../Components/Works/WorksHolder'
 
 const home = () => {
     return (
@@ -52,14 +53,14 @@ const home = () => {
                                         <div className="progess">
                                         <div 
                                                 className="progress-bar bg-primary"
-                                                style={{width: '85%'}}>
+                                                style={{width: '95%'}}>
                                             </div>
                                         </div>
 
                                         <p>JS</p>
                                         <div className="progess">
                                             <div 
-                                                className="progress-bar bg-primary"
+                                                className="progress-bar bg-gray-700"
                                                 style={{width: '85%'}}>
                                             </div>
                                         </div>
@@ -68,7 +69,7 @@ const home = () => {
                                         <div className="progess">
                                             <div 
                                                 className="progress-bar bg-primary"
-                                                style={{width: '85%'}}>
+                                                style={{width: '80%'}}>
                                             </div>
                                         </div>
 
@@ -81,24 +82,23 @@ const home = () => {
                         <section className="services container-faqstyle" id="services">
                             <h2 className="title-content">Servicios</h2>
                             <div className="services-container">
-                                <div className="card card-shadow bg-gray-700 color-gray-300">
+                                <div className="card card-shadow bg-gray-700 color-gray-300 p-5">
                                     <div className="d-flex justify-content-around">
-                                        <i class="fab fa-html5 fa-4x"></i>
-                                        <i class="fab fa-js fa-4x"></i>
-                                        <i class="fab fa-css3-alt fa-4x"></i>
+                                        <i class="fab fa-html5 fa-4x m-3"></i>
+                                        <i class="fab fa-js fa-4x m-3"></i>
+                                        <i class="fab fa-css3-alt fa-4x m-3"></i>
                                     </div>
                                     <h3>Diseño Web</h3>
                                     <p>Manejo de HTML5, CSS3, JS, React, Firebase y mas...</p>
                                 </div>
-                                <div className="card card-shadow bg-primary">
+                                <div className="card card-shadow bg-primary p-5">
                                     <div className="d-flex justify-content-around">
                                         <i class="fas fa-laptop fa-5x"></i>
-                                        <i class="fas fa-cogs fa-5x"></i>
                                     </div>
                                     <h3>Servicio Tecnico de PC</h3>
                                     <p>Instalación y configuracion de SO y apps en Mac y Windows. Servicio tecnico y mantenimiento de hardware.</p>
                                 </div>
-                                <div className="card card-shadow bg-gray-700 color-gray-300">
+                                <div className="card card-shadow bg-gray-700 color-gray-300 p-5">
                                     <i class="fas fa-cube fa-5x"></i>
                                     <h3>Diseño 3D</h3>
                                     <p>Diseño 3D con Fusion 360 y SolidEdge. Impresion 3D con una Original Prusa i3 MK3s</p>
@@ -161,42 +161,7 @@ const home = () => {
 
                         </section>
     
-                        <section class="works-container container-faqstyle" id="works">
-                            <h3 class="title-content">Mis trabajos</h3>
-                            <div class="works-container__topics">
-                                <div class="works-container__topics__card card card-shadow">
-                                <div class="works-container__topics__card__mask">
-                                    <span>Photo magic</span>
-                                </div>
-                                </div>
-                                <div class="works-container__topics__card card card-shadow">
-                                <div class="works-container__topics__card__mask">
-                                    <span>Photo magic</span>
-                                </div>
-                                </div>
-                                <div class="works-container__topics__card card card-shadow">
-                                <div class="works-container__topics__card__mask">
-                                    <span>Photo magic</span>
-                                </div>
-                                </div>
-                                <div class="works-container__topics__card card card-shadow">
-                                <div class="works-container__topics__card__mask">
-                                    <span>Photo magic</span>
-                                </div>
-                                </div>
-                                <div class="works-container__topics__card card card-shadow">
-                                <div class="works-container__topics__card__mask">
-                                    <span>Photo magic</span>
-                                </div>
-                                </div>
-                                <div class="works-container__topics__card card card-shadow">
-                                <div class="works-container__topics__card__mask">
-                                    <span>Photo magic</span>
-                                </div>
-                                </div>
-                            </div>
-                            <a class="btn btn-rounded bg-primary" href="#">Ver todos</a>
-                        </section>
+                        <WorksHolder />
 
                         <section className="contacto-container container-faqstyle" id="contact">
                             <h3 className="title-content">Contactame</h3>
