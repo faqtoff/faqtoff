@@ -11,7 +11,7 @@ const WorksHolder = () => {
 
                 
                 <div class="works-container__topics__card card card-shadow p-3">
-                    <h3 className='text-center'>2DoList</h3>
+                    <h3 className='text-center mt-0'>2DoList</h3>
                     <i class="far fa-calendar-check fa-5x align-self-center"></i>
                 <div class="works-container__topics__card__mask">
                     <span>Lista de tareas gratuita, realizada con React</span>
@@ -28,7 +28,7 @@ const WorksHolder = () => {
                 </div>
                 </div>
                 <div class="works-container__topics__card card card-shadow">
-                    <h3 className='text-center'>Portfolios</h3>
+                    <h3 className='text-center mt-0'>Portfolios</h3>
                     <i class="fas fa-briefcase fa-5x align-self-center"></i>
                 <div class="works-container__topics__card__mask">
                     <span>Portfolios y CV's online</span>
