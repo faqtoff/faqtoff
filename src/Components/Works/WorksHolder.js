@@ -19,7 +19,7 @@ const WorksHolder = () => {
                 </div>
 
                 </div>
-                <div class="works-container__topics__card card card-shadow">
+                <div class="works-container__topics__card card card-shadow p-3">
                     <h3 className='d-none'>Jujuy Unida</h3>
                     <img src={JujuyUnida} alt="JujuyUnida" />
                 <div class="works-container__topics__card__mask">
@@ -27,7 +27,7 @@ const WorksHolder = () => {
                     <a href="https://www.jujuyunida.com">Visitar</a>
                 </div>
                 </div>
-                <div class="works-container__topics__card card card-shadow">
+                <div class="works-container__topics__card card card-shadow p-3">
                     <h3 className='text-center mt-0'>Portfolios</h3>
                     <i class="fas fa-briefcase fa-5x align-self-center"></i>
                 <div class="works-container__topics__card__mask">
