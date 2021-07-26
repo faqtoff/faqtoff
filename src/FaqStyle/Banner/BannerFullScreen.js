@@ -12,7 +12,7 @@ const BannerFullScreen = ({children, className, id, btnClassName}) => {
             </div>
             <a className={"btn-scroll "+btnClassName} href="#main">
                 <span>Scroll Down</span>
-                <i class="fas fa-angle-double-down"></i>
+                <i className="fas fa-angle-double-down"></i>
             </a>
         </header>
     )
