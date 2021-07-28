@@ -1,6 +1,7 @@
 import React from 'react'
 
 import JujuyUnida from '../../assets/work/JujuyUnida.svg'
+import Tdo from '../../assets/work/2Do.png'
 import './Works.css'
 
 const WorksHolder = () => {
@@ -11,8 +12,8 @@ const WorksHolder = () => {
 
                 
                 <div className="works-container__topics__card card card-shadow p-3">
-                    <h3 className='text-center mt-0'>2DoList</h3>
-                    <i className="far fa-calendar-check fa-5x align-self-center"></i>
+                    <h3 className='d-none'>2DoList</h3>
+                    <img src={Tdo} alt="2doList" />
                 <div className="works-container__topics__card__mask">
                     <span>Lista de tareas gratuita, realizada con React</span>
                     <a href="https://www.2dolist.com.ar">Visitar</a>
