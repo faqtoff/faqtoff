@@ -1,6 +1,6 @@
 {
-  "name": "faqtoff-ar",
-  "description": "FaqToff Online App by @Faq",
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
@@ -20,6 +20,7 @@
     "nodemailer": "^6.6.3"
   },
   "devDependencies": {
+    "dotenv": "^10.0.0",
     "firebase-functions-test": "^0.2.0"
   },
   "private": true
