@@ -36,6 +36,8 @@ const Contact = () => {
               setSubmitted(true)
               setName('')
               setEmail('')
+              setMessage('')
+              setSubject('')
             }
         })
     }
