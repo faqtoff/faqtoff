@@ -13,14 +13,12 @@ app.use(cors({ origin: true }));
 app.post("/", (req, res) => {
   const { body } = req;
   const isValidMessage = body.message && body.to && body.subject;
-
+  const APP_NAME = 'FaqToff.com'
   if (!isValidMessage) {
     return res.status(400).send({ message: "invalid request" });
   }
-
-
-    const gmailEmail = functions.config().gmail.email;
-    const gmailPassword = functions.config().gmail.password;
+  const gmailEmail = functions.config().gmail.email;
+  const gmailPassword = functions.config().gmail.password;
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -30,7 +28,7 @@ app.post("/", (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL,
+    from:`${APP_NAME} <noreply@faqtoff.com>`,
     to: body.to,
     subject: body.subject+' '+body.email,
     text: 'De:'+body.name+'  Mensaje:'+body.message

@@ -33,7 +33,7 @@ const home = () => {
                     <Services />
                     <Experience />
                     <WorksHolder />
-                    <Contact />
+                    <Contact btnClassName='bg-primary'/>
 
                     <Footer />
                 </div>

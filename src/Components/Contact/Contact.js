@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Contact = () => {
+const Contact = ({btnClassName}) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -64,7 +64,7 @@ const Contact = () => {
             <input className='input input-shadow' type="text" placeholder="Asunto" name='subject' value={subject} onChange={(e)=>{setSubject(e.target.value)}}/>
             <input className='input input-shadow' type="email" placeholder="Email" name='email' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
             <textarea className='textarea textarea-shadow' name="mensaje" placeholder="Tu mensaje" name='message' value={message} onChange={(e)=>{setMessage(e.target.value)}}></textarea>
-            <button className="btn btn-rounded bg-primary" onClick={handleSubmit}>Enviar</button>
+            <button className={"btn btn-rounded "+btnClassName} onClick={handleSubmit}>Enviar</button>
           </form>
         </div>
       </div>
