@@ -1,4 +1,12 @@
 import React from 'react'
+import ModalButtonWrapper from '../../FaqStyle/Modal/ModalButtonWrapper'
+
+import iniComputacion from '../../assets/certificados/iniComputacion.png'
+import iniComputacion2 from '../../assets/certificados/iniComputacion_utn.png'
+import RCGitHubInicial from '../../assets/certificados/RC-GitHub-Inicial.png'
+import RCHTMLYCSS from '../../assets/certificados/RC-HTML-CSS.png'
+import RCJS from '../../assets/certificados/RC-JavaScript-Inicial.png'
+import RCReactInicial from '../../assets/certificados/RC-React-Inicial.png'
 
 const Experience = () => {
     return (
@@ -21,18 +29,35 @@ const Experience = () => {
                         <h3>RocketCode</h3>
                         <p className="experience-container__topics__card__data__description">Realicé los siguientes cursos de Frontend:</p>
                         <ul>
-                        <li><a style={{marginTop:"25px"}} className="color-primary" href="">GitHub - Inicial</a></li>
-                        <li><a style={{marginTop:"25px"}}  className="color-primary" href="">HTML y CSS - Inicial</a></li>
-                        <li><a style={{marginTop:"25px"}}  className="color-primary" href="">JavaScript - Inicial</a></li>
-                        <li><a style={{marginTop:"25px"}}  className="color-primary" href="">React - Inicial</a></li>
+                            <li>
+                                <ModalButtonWrapper className='btn-link' buttonText='GitHub - Inicial'>
+                                    <img src={RCGitHubInicial} alt="RC-GitHub" />
+                                </ModalButtonWrapper>
+                            </li>
+                            <li><ModalButtonWrapper className='btn-link' buttonText='HTML y CSS - Inicial'>
+                                    <img src={RCHTMLYCSS} alt="RC-HTMLyCSS" />
+                                </ModalButtonWrapper>
+                            </li>
+                            <li><ModalButtonWrapper className='btn-link' buttonText='JavaScript - Inicial'>
+                                    <img src={RCJS} alt="RC-JS" />
+                                </ModalButtonWrapper>
+                            </li>
+                            <li><ModalButtonWrapper className='btn-link' buttonText='React - Inicial'>
+                                    <img src={RCReactInicial} alt="RC-React" />
+                                </ModalButtonWrapper>
+                            </li>
                         </ul>
                 </div>
                 <div className="experience-container__topics__card__data">
                         <i className="fas fa-graduation-cap color-primary"></i>
-                        <span className="fecha">2016 - 2017</span>
+                        <span className="fecha">2011 - 2012</span>
                         <h3>ini Capacitacion</h3>
                         <p className="experience-container__topics__card__data__description">Realicé un curso de "Tecnico en reparacion de Hardware y Redes" en el instituti ini Capacitacion, en la ciudad de San Salvador de Jujuy.</p>
-                        <a style={{marginTop:"25px"}}  className="color-primary" href="">Ver diploma</a>
+
+                        <ModalButtonWrapper className='btn-link mt-1' buttonText='Ver diploma'>
+                            <img src={iniComputacion} alt="Certificado_ini" />
+                            <img src={iniComputacion2} alt="Certificado_ini" />
+                        </ModalButtonWrapper>
                 </div>
                 <a style={{alignSelf: "center"}}  className="color-primary" href="">Ver más</a>
                 </div>

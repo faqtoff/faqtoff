@@ -19,7 +19,6 @@
   */
   cursor: pointer;
 }
-
 .btn-lg,
 a.btn-lg {
   border: none;
@@ -47,7 +46,7 @@ a.btn {
   margin-top: 12px;
   width: 16px;
 }
-/* LUZ */
+/* Rounded */
 .btn-rounded {
   padding: 10px 14px;
   font-size: 18px;
@@ -55,9 +54,17 @@ a.btn {
   box-shadow: none;
   border-radius: 25px;
 }
-.btn.btn-luz:hover {
+.btn.btn-rounded:hover {
   background-color: var(--gray-200);
   color: var(--black);
+}
+.btn-link {
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 300;
+  background-color: white;
+  padding: 0;
 }
 /* BUTTONS COLORS */
 .btn-faqBtn {

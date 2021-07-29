@@ -116,6 +116,12 @@ p {
 .experience-container__topics__card__data > ul > li {
   font-size: 16px;
   font-weight: 200;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.experience-container__topics__card__data > ul > li:last-of-type {
+  margin-bottom: 0;
 }
 /* FOOTER */
 .footer {
