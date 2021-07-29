@@ -49,10 +49,10 @@ const Contact = ({btnClassName}) => {
         }
       })
     } else {
-      name?setNameValidate(''): setNameValidate('validate');
-      message?setMessageValidate(''): setMessageValidate('validate');
-      email?setEmailValidate(''): setEmailValidate('validate');
-      subject?setSubjectValidate(''): setSubjectValidate('validate');
+      {name?setNameValidate(''): setNameValidate('validate');}
+      {message?setMessageValidate(''): setMessageValidate('validate');}
+      {email?setEmailValidate(''): setEmailValidate('validate');}
+      {subject?setSubjectValidate(''): setSubjectValidate('validate');}
     }
 
   };
