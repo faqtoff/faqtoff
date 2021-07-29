@@ -2,6 +2,7 @@ import React from 'react'
 
 import JujuyUnida from '../../assets/work/JujuyUnida.png'
 import Tdo from '../../assets/work/2Do.png'
+import BienesRaices from '../../assets/work/BienesRaices.png'
 import './Works.css'
 
 const WorksHolder = () => {
@@ -35,9 +36,12 @@ const WorksHolder = () => {
                     <span>Portfolios y CV's online</span>
                 </div>
                 </div>
-                <div className="works-container__topics__card card card-shadow d-none">
+                <div className="works-container__topics__card card card-shadow p-3">
+                    <img src={BienesRaices} alt="JujuyUnida" />
                 <div className="works-container__topics__card__mask">
-                    <span>Photo magic</span>
+                    <h3>BienesRaices</h3>
+                    <span>Pagina web de BienesRaices hecha solo con HTML y CSS</span>
+                    <a href="https://www.bienesraices.faqtoff.com">Visitar</a>
                 </div>
                 </div>
                 <div className="works-container__topics__card card card-shadow d-none">
