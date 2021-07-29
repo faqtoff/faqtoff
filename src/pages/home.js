@@ -11,6 +11,8 @@ import AboutMe from '../Components/AboutMe/AboutMe'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 
+console.log(window.location.host)
+
 const home = () => {
     return (
         <div className='full-container'>
@@ -28,13 +30,11 @@ const home = () => {
                     <a className="btn btn-rounded bg-primary" href="#contact">Contactame</a>
                 </BannerFullScreen>
                 <div id='main'>
-                    
                     <AboutMe />
                     <Services />
                     <Experience />
                     <WorksHolder />
                     <Contact btnClassName='bg-primary'/>
-
                     <Footer />
                 </div>
             </div>

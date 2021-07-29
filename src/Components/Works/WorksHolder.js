@@ -12,18 +12,18 @@ const WorksHolder = () => {
 
                 
                 <div className="works-container__topics__card card card-shadow p-3">
-                    <h3 className='d-none'>2DoList</h3>
                     <img src={Tdo} alt="2doList" />
                 <div className="works-container__topics__card__mask">
+                    <h3 className='text-center mt-0'>2DoList</h3>
                     <span>Lista de tareas gratuita, realizada con React</span>
                     <a href="https://www.2dolist.com.ar">Visitar</a>
                 </div>
 
                 </div>
                 <div className="works-container__topics__card card card-shadow p-3">
-                    <h3 className='d-none'>Jujuy Unida</h3>
                     <img src={JujuyUnida} alt="JujuyUnida" />
                 <div className="works-container__topics__card__mask">
+                    <h3 className='text-center mt-0'>Jujuy Unida</h3>
                     <span>Proyecto realizado con React y Firebase</span>
                     <a href="https://www.jujuyunida.com">Visitar</a>
                 </div>
