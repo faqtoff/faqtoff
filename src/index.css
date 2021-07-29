@@ -113,6 +113,9 @@ p {
   font-size: 14px;
   color: gray;
 }
+.experience-container__topics__card__data > ul {
+  padding: 0;
+}
 .experience-container__topics__card__data > ul > li {
   font-size: 16px;
   font-weight: 200;
