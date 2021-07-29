@@ -11,7 +11,6 @@ import AboutMe from '../Components/AboutMe/AboutMe'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 
-console.log(window.location.host)
 
 const home = () => {
     return (

@@ -1,5 +1,6 @@
 import Home from "./pages/home";
 
+//console.log(window.location.host)
 function App() {
   return (
     <div>
