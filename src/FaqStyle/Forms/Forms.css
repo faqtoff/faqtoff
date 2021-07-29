@@ -21,6 +21,9 @@ textarea {
   border: none;
   width: stretch;
 }
+.input.validate {
+  background-color: var(--red-200);
+}
 /* ----------------------------------------------ESTILOS */
 
 /* GREY */
@@ -47,4 +50,10 @@ textarea {
 .textarea-shadow,
 .select-shadow {
   box-shadow: 0 0 8px 0 rgba(144, 149, 161, 0.3);
+}
+.input-shadow.validate,
+.textarea-shadow.validate,
+.select-shadow.validate {
+  background-color: var(--red-200);
+  color: var(--red-300);
 }
