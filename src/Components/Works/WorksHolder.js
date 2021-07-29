@@ -1,6 +1,6 @@
 import React from 'react'
 
-import JujuyUnida from '../../assets/work/JujuyUnida.svg'
+import JujuyUnida from '../../assets/work/JujuyUnida.png'
 import Tdo from '../../assets/work/2Do.png'
 import './Works.css'
 
