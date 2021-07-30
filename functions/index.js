@@ -3,12 +3,15 @@ const nodemailer = require("nodemailer");
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const fetch = require('node-fetch');
+//const Bluebird = require('bluebird');
 
 const app = express();
 app.use(cors({ origin: true }));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("../../client"));
+app.use(express.static("../../client")); 
+//fetch.Promise = Bluebird;
 
 const APP_NAME = 'Faqtoff.com'
 ////////////////////////////////////////////////////////////////////////////////////////////////// GMail-Config
@@ -22,51 +25,30 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-Config
-const mercadopago = require ('mercadopago');
-//middleware
-//app.use(bodyParser.urlencoded({ extended: false }))
-// Agrega credenciales
-mercadopago.configure({
-  access_token: 'APP_USR-4699093593447400-073003-e66fa5115a012dedc7dc3a82e31f59df-799236112'
-});
+const preferencia = (orderData) => {  
+  fetch('https://api.mercadopago.com/checkout/preferences?access_token=APP_USR-620438098115816-072800-13009b5e96427d29e5bcda3a940f0a05-143813633',
+    {
+      method: 'post',
+      body: JSON.stringify(orderData),
+      headers: { 'Content-Type': 'application/json' },
+    }
+  )
+  .then(respoce => {
+    functions.logger.log('respoce', respoce, respoce.json());
+    respoce.json()
+  })
+  .then(json => {
+    functions.logger.log('Nueva Preferencia de MP:', json);
+    return res.status(200).send(json)
+  });
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-CheckOut
 app.post('/create_preference',(req,res) => {
   functions.logger.log('Checkout');
-  res.redirect('https://faqtoff.com');
-  /*
-  let preference = {
-    items: [
-      {
-        title: req.body.title,
-        unit_price: req.body.price,
-        quantity: req.body.quantity,
-      }
-    ],
-		back_urls: {
-			"success": "http://localhost:8080/feedback",
-			"failure": "http://localhost:8080/feedback",
-			"pending": "http://localhost:8080/feedback"
-		},
-		auto_return: 'approved',
-  };
-  mercadopago.preferences.create(preference)
-  .then(function(response){
-
-    res.redirect(response.body.init_point);
-    
-  }).catch(function(error){
-    console.log(error);
-    res.redirect('https://faqtoff.com');
-  });
-  */
-});
-app.get('/feedback', function(request, response) {
-  response.json({
-   Payment: request.query.payment_id,
-   Status: request.query.status,
-   MerchantOrder: request.query.merchant_order_id
- })
+  let {body} = req
+  return res.status(200).send( JSON.stringify(body))
+  //preferencia(body)
+  
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////// GMail-CONTACT.ME
 app.post("/", (req, res) => {
@@ -89,7 +71,7 @@ app.post("/", (req, res) => {
       return res.status(500).send({ message: "error " + err.message });
     }
     functions.logger.log('New email sent to:', body.to);
-    return res.send({ message: "email sent" });
+    return res.send({ message: "email-sent" });
   });
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////// GMail-CONTACT.AUTH

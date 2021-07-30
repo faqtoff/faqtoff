@@ -20,6 +20,7 @@
     "firebase-functions": "^3.14.1",
     "jquery": "^3.6.0",
     "mercadopago": "^1.5.8",
+    "node-fetch": "^2.6.1",
     "nodemailer": "^6.6.3"
   },
   "devDependencies": {
