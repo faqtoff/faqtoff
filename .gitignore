@@ -4,7 +4,7 @@
 /src/pages/email-users
 /functions/node_modules
 /node_modules
-/borradores
+
 /.pnp
 .pnp.js
 .firebase

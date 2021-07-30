@@ -1,0 +1,39 @@
+{
+    "user":{
+        "id":799236112,
+        "nickname":"TETE3300067",
+        "password":"qatest83"
+        ,"site_status":"active",
+        "email":"test_user_91234566@testuser.com",
+        "info": {
+            "createdAt": "30/07/21",
+            "credentials": {
+                "produccion": {
+                    "public_key":"APP_USR-029740d4-9021-4b25-bf6e-4f74230e5b86",
+                    "access_token":"APP_USR-4699093593447400-073003-e66fa5115a012dedc7dc3a82e31f59df-799236112",
+                    "client_id":"4699093593447400",
+                    "client_secret":"IrOa8XKIudqqeyD2HPV8kNlx3NKmqD1o"
+                },
+                "prueba":{
+                    "public_key":"TEST-0223d5ce-ed46-4dc4-8a71-b675bfce3847",
+                    "access_token":"TEST-4699093593447400-073003-ee7e00cbc539e1cd25581b3dcd3d67e4-799236112"
+                }
+
+            }
+        }
+    },
+    "user1":{
+        "id":799236330,
+        "nickname":"TESTRXR70GJM",
+        "password":"qatest4564",
+        "site_status":"active",
+        "email":"test_user_44883807@testuser.com"
+    },
+    "user2":{
+        "id":799237068,
+        "nickname":"TESTTTFRQYXG",
+        "password":"qatest2726",
+        "site_status":"active",
+        "email":"test_user_10100287@testuser.com"
+    }
+}
