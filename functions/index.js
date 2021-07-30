@@ -46,7 +46,7 @@ const preferencia = (orderData) => {
 app.post('/create_preference',(req,res) => {
   functions.logger.log('Checkout');
   let {body} = req
-  return res.status(200).send( JSON.stringify(body))
+  return res.status(200).send(body)
   //preferencia(body)
   
 });
