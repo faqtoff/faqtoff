@@ -24,31 +24,27 @@ const transporter = nodemailer.createTransport({
       pass: gmailPassword,
   }
 });
-
-const preferencia = (orderData) => {  
-  fetch('https://api.mercadopago.com/checkout/preferences?access_token=APP_USR-620438098115816-072800-13009b5e96427d29e5bcda3a940f0a05-143813633',
-    {
-      method: 'post',
-      body: JSON.stringify(orderData),
-      headers: { 'Content-Type': 'application/json' },
-    }
-  )
-  .then(respoce => {
-    functions.logger.log('respoce', respoce, respoce.json());
-    respoce.json()
-  })
-  .then(json => {
-    functions.logger.log('Nueva Preferencia de MP:', json);
-    return res.status(200).send(json)
-  });
-}
-////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-CheckOut
+////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-Config
+const mercadopago = require ('mercadopago');
+const access_token = functions.config().mercadopago.access_token;
+// Agrega credenciales
+mercadopago.configure({
+  access_token: access_token,
+});
+////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-CreatePreference
 app.post('/create_preference',(req,res) => {
-  functions.logger.log('Checkout');
+  functions.logger.log('create_preference');
   let {body} = req
-  return res.status(200).send(body)
-  //preferencia(body)
-  
+  functions.logger.log('create_preference');
+  mercadopago.preferences.create(body)
+  .then(function(response){
+  // Este valor reemplazará el string "<%= global.id %>" en tu HTML
+    
+    //global.id = response.body.id;
+    return res.status(200).send(response.body.id)
+  }).catch(function(error){
+    console.log(error);
+  });
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////// GMail-CONTACT.ME
 app.post("/", (req, res) => {
@@ -75,6 +71,7 @@ app.post("/", (req, res) => {
   });
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////// GMail-CONTACT.AUTH
+// Welcome Mail
 async function sendWelcomeEmail(email, displayName) {
   const mailOptions = {
     from: `${APP_NAME} <noreply@faqtoff.com>`,
@@ -88,6 +85,7 @@ async function sendWelcomeEmail(email, displayName) {
   functions.logger.log('New welcome email sent to:', email);
   return null;
 }
+// Delete Mail
 async function sendGoodbyeEmail(email, displayName) {
   const mailOptions = {
     from: `${APP_NAME} <noreply@faqtoff.com>`,
@@ -110,4 +108,4 @@ exports.sendByeEmail = functions.auth.user().onDelete((user) => {
   const email = user.email;
   const displayName = user.displayName;
   return sendGoodbyeEmail(email, displayName);
-});
+}); 
