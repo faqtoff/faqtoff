@@ -27,7 +27,6 @@ const transporter = nodemailer.createTransport({
 ////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-Config
 const mercadopago = require ('mercadopago');
 const access_token = functions.config().mercadopago.access_token;
-// Agrega credenciales
 mercadopago.configure({
   access_token: access_token,
 });
