@@ -93,7 +93,7 @@ app.get('/registrar_pago', (req, res) => {
 app.post('/mp/webhook', (req, res) => {
   let {body} = req
   const database = async () =>{
-    await db.collection('MercadoPago-webhook').doc(body.data?.id&&body.data.id).set(body)
+    await db.collection('MercadoPago-webhook').doc(body.data.id&&body.data.id).set(body)
     .then(() => {
       return res.status(200).send('OK');
     })
