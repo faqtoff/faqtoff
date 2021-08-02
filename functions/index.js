@@ -3,7 +3,9 @@ const nodemailer = require("nodemailer");
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const fetch = require('node-fetch');
+const firebase = require("firebase");
+require("firebase/firestore");
+//const fetch = require('node-fetch');
 //const Bluebird = require('bluebird');
 
 const app = express();
@@ -14,6 +16,12 @@ app.use(express.static("../../client"));
 //fetch.Promise = Bluebird;
 
 const APP_NAME = 'Faqtoff.com'
+firebase.initializeApp({
+  apiKey: functions.config().fb_config.api_key,
+  authDomain: functions.config().fb_config.auth_domain,
+  projectId: functions.config().fb_config.project_id
+});
+const db = firebase.firestore();
 ////////////////////////////////////////////////////////////////////////////////////////////////// GMail-Config
 const gmailEmail = functions.config().gmail.email;
 const gmailPassword = functions.config().gmail.password;
@@ -27,8 +35,12 @@ const transporter = nodemailer.createTransport({
 ////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-Config
 const mercadopago = require ('mercadopago');
 const access_token = functions.config().mercadopago.access_token;
-mercadopago.configure({
+const access_token_test = functions.config().mercadopago_test.access_token;
+/*mercadopago.configure({
   access_token: access_token,
+});*/
+mercadopago.configure({
+  access_token: access_token_test,
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-CreatePreference
 app.post('/create_preference',(req,res) => {
@@ -37,14 +49,60 @@ app.post('/create_preference',(req,res) => {
   functions.logger.log('create_preference');
   mercadopago.preferences.create(body)
   .then(function(response){
-  // Este valor reemplazará el string "<%= global.id %>" en tu HTML
-    
-    //global.id = response.body.id;
     return res.status(200).send(response.body)
-  }).catch(function(error){
-    console.log(error);
   });
 });
+////////////////////////////////////////////////////////////////////////////////////////////////// RegistrarPago
+app.get('/registrar_pago', (req, res) => {
+  /*
+  /registrar_pago/
+  ?collection_id=16156288605
+  &collection_status=approved
+  &payment_id=16156288605
+  &status=approved
+  &external_reference=mlplesoj9b
+  &payment_type=credit_card
+  &merchant_order_id=3036747981
+  &preference_id=799236112-3a5fa3ae-e65c-41f7-b9c8-2aa8fa42de30
+  &site_id=MLA
+  &processing_mode=aggregator
+  &merchant_account_id=null
+  */
+  const database = async () =>{
+    await db.collection('MercadoPago').doc(req.query.payment_id).set({
+      collection_id: req.query.collection_id,
+      collection_status: req.query.collection_status,
+      payment_id: req.query.payment_id,
+      status: req.query.collection_status,
+      external_reference: req.query.external_reference,
+      payment_type: req.query.payment_type,
+      merchant_order_id: req.query.merchant_order_id,
+      site_id: req.query.site_id,
+      processing_mode: req.query.processing_mode,
+      merchant_account_id: req.query.merchant_account_id
+    })
+    .then(() => {
+      return res.status(200).send({message: "Transaccion Guardada"});
+    })
+    .catch((error) => {
+      return res.status(400).send({message: "invalid request" , error: error});
+    });
+  }
+  database()
+})
+app.post('/mp/webhook', (req, res) => {
+  let {body} = req
+  const database = async () =>{
+    await db.collection('MercadoPago-webhook').doc(body.data.id&&body.data.id).set(body)
+    .then(() => {
+      return res.status(200).send('OK');
+    })
+    .catch((error) => {
+      return res.status(400).send({message: "invalid request" , error: error});
+    });
+  }
+  database()
+})
 ////////////////////////////////////////////////////////////////////////////////////////////////// GMail-CONTACT.ME
 app.post("/", (req, res) => {
   const { body } = req;
