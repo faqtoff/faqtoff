@@ -40,7 +40,7 @@ app.post('/create_preference',(req,res) => {
   // Este valor reemplazará el string "<%= global.id %>" en tu HTML
     
     //global.id = response.body.id;
-    return res.status(200).send(response.body.id)
+    return res.status(200).send({preference_id: response.body.id})
   }).catch(function(error){
     console.log(error);
   });
