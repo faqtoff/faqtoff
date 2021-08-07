@@ -36,11 +36,8 @@ const transporter = nodemailer.createTransport({
 const mercadopago = require ('mercadopago');
 const access_token = functions.config().mercadopago.access_token;
 const access_token_test = functions.config().mercadopago_test.access_token;
-/*mercadopago.configure({
-  access_token: access_token,
-});*/
 mercadopago.configure({
-  access_token: access_token_test,
+  access_token: access_token,
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-CreatePreference
 app.post('/create_preference',(req,res) => {
