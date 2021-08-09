@@ -35,7 +35,6 @@ const transporter = nodemailer.createTransport({
 ////////////////////////////////////////////////////////////////////////////////////////////////// MercadoPago-Config
 const mercadopago = require ('mercadopago');
 const access_token = functions.config().mercadopago.access_token;
-const access_token_test = functions.config().mercadopago_test.access_token;
 mercadopago.configure({
   access_token: access_token,
 });
@@ -51,20 +50,6 @@ app.post('/create_preference',(req,res) => {
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////// RegistrarPago
 app.get('/registrar_pago', (req, res) => {
-  /*
-  /registrar_pago/
-  ?collection_id=16156288605
-  &collection_status=approved
-  &payment_id=16156288605
-  &status=approved
-  &external_reference=mlplesoj9b
-  &payment_type=credit_card
-  &merchant_order_id=3036747981
-  &preference_id=799236112-3a5fa3ae-e65c-41f7-b9c8-2aa8fa42de30
-  &site_id=MLA
-  &processing_mode=aggregator
-  &merchant_account_id=null
-  */
   const database = async () =>{
     await db.collection('MercadoPago').doc(req.query.payment_id).set({
       collection_id: req.query.collection_id,
