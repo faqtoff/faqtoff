@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from '../../assets/avatar.jpeg'
+import printCV from '../../Services/CVprint'
 
 const AboutMe = () => {
     return (
@@ -14,7 +15,7 @@ const AboutMe = () => {
                         <p>Hola! Soy desarrollador Frontend.</p>
                         <p>Actualmente estudio Ingenieria Industrial en la UTN.BA y realizo trabajos web a pedido</p>
                         <p>Tambien tengo una impresora 3D y realizo impresiones y diseños por pedios</p>
-                        <button className="btn btn-rounded bg-primary">Ver Curriculum</button>
+                        <button className="btn btn-rounded bg-primary" onClick={printCV}>Ver Curriculum</button>
                     </div>
 
                     <div className="col-faqstyle">

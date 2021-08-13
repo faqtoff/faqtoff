@@ -7,6 +7,8 @@ import RCGitHubInicial from '../../assets/certificados/RC-GitHub-Inicial.png'
 import RCHTMLYCSS from '../../assets/certificados/RC-HTML-CSS.png'
 import RCJS from '../../assets/certificados/RC-JavaScript-Inicial.png'
 import RCReactInicial from '../../assets/certificados/RC-React-Inicial.png'
+import UBoostrap from '../../assets/certificados/udemy_1.jpg'
+import UDesarrolloWeb from '../../assets/certificados/udemy_2.jpg'
 
 const Experience = () => {
     return (
@@ -22,6 +24,23 @@ const Experience = () => {
                         <span className="fecha">2021 - actualidad</span>
                         <h3>UTN.BA</h3>
                         <p className="experience-container__topics__card__data__description">Actualmente me encuentro estudiando la carrera de Ingenieria Industrial en la Universidad Tecnologica Nacional.</p>
+                </div>
+                <div className="experience-container__topics__card__data">
+                        <i className="fas fa-graduation-cap color-primary"></i>
+                        <span className="fecha">2021 - 2021</span>
+                        <h3>Udemy</h3>
+                        <p className="experience-container__topics__card__data__description">Realicé los siguientes cursos de Desarrollo Web:</p>
+                        <ul>
+                            <li>
+                                <ModalButtonWrapper className='btn-link' buttonText='Desarrollo Web Completo con HTNL5, CSS3, JS, AJAX, PHP y MySQL'>
+                                    <img src={UDesarrolloWeb} alt="RC-GitHub" />
+                                </ModalButtonWrapper>
+                            </li>
+                            <li><ModalButtonWrapper className='btn-link' buttonText='Boostrap 4 + Forms con PHP'>
+                                    <img src={UBoostrap} alt="RC-HTMLyCSS" />
+                                </ModalButtonWrapper>
+                            </li>
+                        </ul>
                 </div>
                 <div className="experience-container__topics__card__data">
                         <i className="fas fa-graduation-cap color-primary"></i>

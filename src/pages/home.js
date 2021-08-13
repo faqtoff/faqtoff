@@ -23,7 +23,7 @@ const home = () => {
                     <div className="btn-social-desk">
                         <a className="btn-social color-black" href="https://www.linkedin.com/in/faqtoff" target="blank"><i className="fab fa-linkedin"></i></a>
                         <a className="btn-social color-black" href="https://github.com/faqtoff" target="blank"><i className="fab fa-github"></i></a>
-                        <a className="btn-social color-black" href="#" target="blank"><i className="fab fa-facebook-square"></i></a>
+                        <a className="btn-social color-black" href="https://www.facebook.com/facutoff" target="blank"><i className="fab fa-facebook-square"></i></a>
                         <a className="btn-social color-black" href="https://www.instagram.com/faqtoff/" target="blank"><i className="fab fa-instagram"></i></a>
                     </div>
                     <a className="btn btn-rounded bg-primary" href="#contact">Contactame</a>

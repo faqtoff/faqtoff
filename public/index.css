@@ -1,0 +1,19 @@
+/* Componentes */
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Alert/Alert.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Button/Button.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Card/Card.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Forms/Forms.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/FaqFooter/FaqFooter.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Navbar/Navbar.css");
+
+/* Utilidades */
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Colors/Colors.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Conteiners.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Display.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Size.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Text.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Margin.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Padding.css");
+
+/* Global */
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/FaqStyle.css");
