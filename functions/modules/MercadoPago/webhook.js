@@ -43,7 +43,7 @@ const db = firebase.firestore();
 // MercadoPago Config
 const mercadopago = require ('mercadopago');
 const mercadoPagoKeys = {
-    access_token:  "APP_USR-4699093593447400-073003-e66fa5115a012dedc7dc3a82e31f59df-799236112",
+    access_token:  "APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398",
 }
 mercadopago.configure(mercadoPagoKeys);
 
@@ -73,7 +73,7 @@ const obtenerPago = async (id) => {
     // Fetch para obtener el pago de la api de MercadoPago
     const pago = await fetch (`https://api.mercadopago.com/v1/payments/${id}`, {
       headers: {
-        Authorization: `Bearer ${mercadoPagoKeys.access_token}`
+        Authorization: `Bearer ${"APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398"}`
       }
     })
     return await pago.json();
@@ -105,3 +105,4 @@ app.post('', (req, res) => {
 })
 
 exports.webhook = functions.https.onRequest(app);
+
