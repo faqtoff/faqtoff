@@ -7,9 +7,9 @@ const Services = () => {
             <div className="services-container">
                 <div className="card card-shadow bg-gray-700 color-gray-300 p-5">
                     <div className="d-flex justify-content-around">
-                        <i className="fab fa-html5 fa-4x m-3"></i>
-                        <i className="fab fa-js fa-4x m-3"></i>
-                        <i className="fab fa-css3-alt fa-4x m-3"></i>
+                        <i className="fab fa-html5 fa-4x m-1"></i>
+                        <i className="fab fa-js fa-4x m-1"></i>
+                        <i className="fab fa-css3-alt fa-4x m-1"></i>
                     </div>
                     <h3>Diseño Web</h3>
                     <p>Manejo de HTML5, CSS3, JS, React, Firebase y mas...</p>

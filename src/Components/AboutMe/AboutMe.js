@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from '../../assets/avatar.jpeg'
-import printCV from '../../Services/CVprint'
+import printCV from '../../services/CVprint'
 
 const AboutMe = () => {
     return (

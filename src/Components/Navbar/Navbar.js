@@ -12,6 +12,7 @@ const Navbar = () => {
                     <li className='m-3'><a href="#experience" className='color-gray-300'><i className="fas fa-graduation-cap color-primary"></i>Experiencia</a></li>
                     <li className='m-3'><a href="#works" className='color-gray-300'><i className="fas fa-layer-group color-primary"></i> Trabajos</a></li>
                     <li className='m-3'><a href="#contact" className='color-gray-300'><i className="fas fa-comments color-primary"></i> Contacto</a></li>
+                    <li className="m-3"><a href="" className="color-gray-300"><i className="fas fa-shapes color-primary"></i> Mis Apps</a></li>
                 </ul>
             </NavbarAside>
     )

@@ -3,13 +3,13 @@ import BannerFullScreen from '../FaqStyle/Banner/BannerFullScreen'
 
 import Avatar from '../assets/avatar.jpeg'
 
-import WorksHolder from '../Components/Works/WorksHolder'
-import Contact from '../Components/Contact/Contact'
-import Experience from '../Components/Experience/Experience'
-import Services from '../Components/Services/Services'
-import AboutMe from '../Components/AboutMe/AboutMe'
-import Navbar from '../Components/Navbar/Navbar'
-import Footer from '../Components/Footer/Footer'
+import WorksHolder from '../components/Works/WorksHolder'
+import Contact from '../components/Contact/Contact'
+import Experience from '../components/Experience/Experience'
+import Services from '../components/Services/Services'
+import AboutMe from '../components/AboutMe/AboutMe'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 
 const home = () => {

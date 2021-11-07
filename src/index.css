@@ -1,7 +1,31 @@
 @import url("./Normalize.css");
-@import url("./FaqStyle/FaqStyle.css");
+/* Componentes */
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Alert/Alert.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Banner/BannerFullScreen.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Button/Button.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Card/Card.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Forms/Forms.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/FaqFooter/FaqFooter.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Modal/Modal.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Navbar/Navbar.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Navbar/NavbarAside.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Progressbar/Progressbar.css");
+
+/* Utilidades */
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Colors/Colors.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Conteiners.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Display.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Grid.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Size.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Text.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Margin.css");
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/Padding.css");
+
+/* CORE */
+@import url("https://gitcdn.link/repo/faqtoff/FaqStyle/main/src/FaqStyle/FaqStyle.css");
 
 :root {
+  --primary: #ffb62d;
   --color-primary: #343353;
   --bg-color-primary: rgb(109, 112, 226);
   --color-secondary: var(--gray-700);
@@ -45,6 +69,14 @@ p {
 .title-content {
   margin: 38px 0;
   font-size: 28px;
+}
+.btn-link {
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 300;
+  background-color: #fff;
+  padding: 0;
 }
 /* SKILS */
 .about-me-container {
