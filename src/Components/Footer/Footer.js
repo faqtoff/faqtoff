@@ -1,5 +1,5 @@
 import React from 'react';
-import FaqFooter from '../../FaqStyle/FaqFooter/FaqFooter'
+/* import FaqFooter from '../../FaqStyle/FaqFooter/FaqFooter' */
 
 const Footer = () => {
     return (
@@ -13,7 +13,7 @@ const Footer = () => {
                 <a className="btn-social color-white" href="https://www.instagram.com/faqtoff/" target="blank"><i className="fab fa-instagram"></i></a>
             </div>
             </div>
-            <FaqFooter />
+            {/* <FaqFooter /> */}
         </footer>
     )
 }

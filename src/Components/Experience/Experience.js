@@ -1,5 +1,5 @@
 import React from 'react'
-import ModalButtonWrapper from '../../FaqStyle/Modal/ModalButtonWrapper'
+//import ModalButtonWrapper from '../../FaqStyle/Modal/ModalButtonWrapper'
 
 import iniComputacion from '../../assets/certificados/iniComputacion.png'
 import iniComputacion2 from '../../assets/certificados/iniComputacion_utn.png'
@@ -30,7 +30,7 @@ const Experience = () => {
                         <span className="fecha">2021 - 2021</span>
                         <h3>Udemy</h3>
                         <p className="experience-container__topics__card__data__description">Realicé los siguientes cursos de Desarrollo Web:</p>
-                        <ul>
+                        {/* <ul>
                             <li>
                                 <ModalButtonWrapper className='btn-link' buttonText='Desarrollo Web Completo con HTNL5, CSS3, JS, AJAX, PHP y MySQL'>
                                     <img src={UDesarrolloWeb} alt="RC-GitHub" />
@@ -40,7 +40,7 @@ const Experience = () => {
                                     <img src={UBoostrap} alt="RC-HTMLyCSS" />
                                 </ModalButtonWrapper>
                             </li>
-                        </ul>
+                        </ul> */}
                 </div>
                 <div className="experience-container__topics__card__data">
                         <i className="fas fa-graduation-cap color-primary"></i>
