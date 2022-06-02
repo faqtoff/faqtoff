@@ -6,20 +6,11 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=faqtoff" alt="faqtoff" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/f_toff" target="blank"><img src="https://img.shields.io/twitter/follow/faqtoff?logo=twitter&style=for-the-badge" alt="faqtoff" /></a> </p>
-
-- 🔭 I’m currently working on [Appstract](appstractweb.com)
-
+- 🔭 I’m currently working on [Appstract](appstractweb.com) && [Random Development](randev.com.ar)
 - 🌱 I’m currently learning **React Native**
-
-- 🔭 I’m currently working on [Random Development](randev.com.ar)
-
 - 👨‍💻 All of my projects are available at [faqtoff.com](faqtoff.com)
-
 - 📝 I regularly write articles on [faqtoff.com](faqtoff.com)
-
 - 💬 Ask me about **react, ecommerce, MercadoPago, angular, node**
-
 - 📫 How to reach me **facundotp@randev.com.ar**
 
 <h3 align="left">Connect with me:</h3>
