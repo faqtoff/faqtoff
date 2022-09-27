@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Facu</h1>
 <h3 align="center">A passionate FullStack developer from Buenos Aires, Argentina</h3>
 
-- 🔭 I’m currently working on [Appstract](appstractweb.com) && [Random Development](randev.com.ar)
+- 🔭 I’m currently working on [Droptek](https://www.droptek.com/) && [Random Development](randev.com.ar)
 - 🌱 I’m currently learning **React Native**
 - 👨‍💻 All of my projects are available at [faqtoff.com](faqtoff.com)
 - 📝 I regularly write articles on [faqtoff.com](faqtoff.com)
